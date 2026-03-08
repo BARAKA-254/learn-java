@@ -7,13 +7,19 @@ class subString{
         System.out.print("Enter your email: ");
         String email = scanner.nextLine();
 
-        String domain = email.substring(email.indexOf("@") + 1);
-        String username = email.substring(0,email.indexOf("@"));
+        if(email.contains("@")){
+            String domain = email.substring(email.indexOf("@") + 1);
+            String username = email.substring(0,email.indexOf("@"));
 
 
-        System.out.println("Email: "+ email);
-        System.out.println("Username: "+ username);
-        System.out.println("Domain: "+ domain);
+            System.out.println("Email: "+ email);
+            System.out.println("Username: "+ username);
+            System.out.println("Domain: "+ domain);
+        }
+        else{
+            System.out.println("Invalid Email. ");
+        }
+        
         
         scanner.close();
     }
