@@ -17,12 +17,14 @@ class weightConversion{
 
         if(choice == 1){
             weight*=2.20462;
-            System.out.println("Weight in pounds is: " + weight);
+            System.out.printf("Weight in pounds is: %.2f\n", weight);
+        }
+        else if(choice==2) {
+            weight/=2.20462;
+            System.out.printf("Weight in Kgs: %.2f\n", weight);
         }
         else{
-            System.out.println("Weight in pounds is: " + weight);
-            weight/=2.20462;
-            System.out.println("Weight in Kgs: " + weight);
+            System.out.println("Invalid Input.");
         }
         
         scanner.close();
