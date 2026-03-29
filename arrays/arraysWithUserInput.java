@@ -23,5 +23,7 @@ class arraysWithUserInput{
             System.out.println(food);
         }
 
+        scanner.close();
+
     }
 }
