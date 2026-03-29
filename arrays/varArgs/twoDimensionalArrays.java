@@ -15,6 +15,8 @@ class twoDimensionalArrays{
 
         groceries [2][0] = "eggs";
 
+        
+
         for(String[] foods : groceries){
 
             for(String food : foods){
@@ -24,5 +26,11 @@ class twoDimensionalArrays{
             }
             System.out.println();
         }
+        System.out.println();
+
+        // access and print an element from the array
+        System.out.println("Last element: " + groceries[2][3]);
+
+
     }
 }
