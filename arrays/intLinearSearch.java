@@ -22,5 +22,6 @@ class intLinearSearch{
             System.out.println(target + " Not found in the array.");
         }
         
+        scanner.close();
     }
 }
