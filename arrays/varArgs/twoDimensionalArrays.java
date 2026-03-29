@@ -11,6 +11,10 @@ class twoDimensionalArrays{
                                  {"chicken", "pork", "beef", "fish"}
                                 };
 
+        // access an element and replace it from the array
+
+        groceries [2][0] = "eggs";
+
         for(String[] foods : groceries){
 
             for(String food : foods){
