@@ -20,33 +20,43 @@ class quizGame{
                               {"A. Steve Jobs","B. Bill Gates", "C. Alan Turing", "D. Charles Babbage"},
                               {"A. C","B. COBOL", "C. FORTRAN", "D. ASSEMBLY"}
                              };
-                            
+         
+                             
         String [] correctChoices = {"C", "A", "B", "D", "C" };
         double score = 0;
         String guess;
         double percentageScore;
 
         Scanner scanner = new Scanner(System.in);
-
+        
+        //outer for loop to iterate through the questions array
         for(int i = 0; i < questions.length; i++){
             System.out.println(questions[i]);
             
+            // inner for loop to iterate through the first element of the options 2d array which is an array of options for the current index question
             for(int j = 0 ; j < options[i].length; j++ ){
 
+                // print the j'th element of the i'th array
+                // in this case the j'th element is every element of the i'th array
+                // i'th element is the outer array of the 2D array therefore an array element of array elements
                 System.out.println(options[i][j]);
             }
 
+            // accept user's choice
             System.out.print("ANSWER: ");
             guess = scanner.nextLine().toUpperCase();
 
+            // check if the user's choice is valid
             if(!guess.equals("A") && !guess.equals("B") && !guess.equals("C") && !guess.equals("D")){
                 System.out.println("INVALID CHOICE");
             }
 
+            // update score if user's choice matches the i'th element of the correct answers array
             else if(guess.equals(correctChoices[i])){
                 System.out.println("CORRECT!!");
                 score++;
             }
+            
             else{
                 System.out.println("INCORRECT!! the answer is " + correctChoices[i]);
             }
