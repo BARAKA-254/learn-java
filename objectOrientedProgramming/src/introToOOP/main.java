@@ -4,7 +4,15 @@ class main{
 
         Car car = new Car();
 
-        System.out.println("You drive a " + car.color  + " " + car.model);
-        System.out.println("The " + car.make + " " + car.model + " costs Ksh " + car.price );
+        System.out.println(car.year);
+        System.out.println(car.price);
+        System.out.println(car.isRunning);
+
+        car.start();
+        System.out.println(car.isRunning);
+        car.stop();
+        System.out.println(car.isRunning);
+
+
     }
 }

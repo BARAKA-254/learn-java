@@ -6,4 +6,14 @@ public class Car{
     boolean isRunning = false;
     String color = "Red";
     double price = 6000000;
+
+    void start(){
+        isRunning = true;
+        System.out.println("Engine started");
+    }
+    void stop(){
+        isRunning = false;
+        System.out.println("Engine stopped");
+    }
 }
+
