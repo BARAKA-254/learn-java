@@ -13,6 +13,8 @@ class main{
         car.stop();
         System.out.println(car.isRunning);
 
+        car.drive();
+        car.lastModel();
 
     }
 }
