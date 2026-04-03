@@ -25,7 +25,16 @@ public class main {
         System.out.println(student3.age);
         System.out.println(student3.gpa);
         System.out.println(student3.isEnrolled);
+        // call the study method
+        student3.study();
         System.out.println();
+
+        // create book objects
+        Book myBook = new Book("The Art of Hacking", "Cyber Mentor", 34569);
+        Book yourBook = new Book("JAVA PROGRAMMING", "BRO CODE", 9345);
+
+        System.out.println("I am reading " + myBook.title + " by " + myBook.author);
+        System.out.println("May I have the book titled " + yourBook.title + " by " + yourBook.author);
     }
     
 }
