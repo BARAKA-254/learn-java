@@ -15,6 +15,9 @@ public class Student{
     void study(){
         System.out.println(this.name + " is studying");
     }
+    void read(){
+        System.out.println(this.name + " is reading ");  
+    }
 
 
 }
