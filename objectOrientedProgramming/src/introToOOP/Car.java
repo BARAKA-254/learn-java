@@ -5,4 +5,5 @@ public class Car{
     int year = 2021; 
     boolean isRunning = false;
     String color = "Red";
+    double price = 6000000;
 }
