@@ -16,14 +16,38 @@ public class App{
         System.out.println("********************************************");
         System.out.println("WELCOME TO JAVA SLOT MACHINE. 🍒 🍉 🍋 ⭐ 🔔");
         System.out.println("********************************************");
+
+
+        Scanner scanner  = new Scanner(System.in);
         // DISPLAY BALANCE
+        while(balance > 0){
+            System.out.println("Your Balance is " + balance);
+
+            // PLACE BET
+            System.out.println("Place your bet: ");
+            bet = scanner.nextInt();
+
+            //  CONFIRM IF BET IF GREATER THAN BALANCE
+            if(bet > balance){
+                System.out.println("Bet amount cannot be more than the balance!!");
+                continue;
+            }
+            //  CONFIRM IF BET IS GREATER THAN 0
+            else if(bet >= 0){
+                System.out.println("Bet amount must be greater than 0. ");
+                continue;
+            }
+            //  SUBTRACT BET FROM BALANCE
+            else{
+                balance -= bet;
+            }
+
+            spinRow();
+
+        }
         
-        // PLAY IF BALANCE IS > 0
-        // PLACE BET
-        //  CONFIRM IF BET IF GREATER THAN BALANCE
-        //  CONFIRM IF BET IS GREATER THAN 0
-        //  SUBTRACT BET FROM BALANCE
         // SPIN ROW
+        
         // PRINT ROW
         // GET PAYOUT
         // ASK TO PLAY AGAIN
