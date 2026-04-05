@@ -24,7 +24,8 @@ public class App{
             System.out.println("Your Balance is " + balance);
 
             // PLACE BET
-            System.out.println("Place your bet: ");
+            System.out.println("*********************");
+            System.out.print("Place your bet Amount: ");
             bet = scanner.nextInt();
 
             //  CONFIRM IF BET IF GREATER THAN BALANCE
@@ -33,7 +34,7 @@ public class App{
                 continue;
             }
             //  CONFIRM IF BET IS GREATER THAN 0
-            else if(bet >= 0){
+            else if(bet <= 0){
                 System.out.println("Bet amount must be greater than 0. ");
                 continue;
             }
@@ -42,15 +43,30 @@ public class App{
                 balance -= bet;
             }
 
-            spinRow();
+            Row = spinRow();
 
         }
+        scanner.close();
         
-        // SPIN ROW
-        
-        // PRINT ROW
         // GET PAYOUT
         // ASK TO PLAY AGAIN
         // DISPLAY EXIT MESSAGE
     }
+    // SPIN ROW
+    static String[] spinRow(){
+        Random random = new Random();
+
+        String[] symbols = {"🍒", "🍉", "🍋", "⭐", "🔔"};
+            
+        String [] row = new String[3];
+            
+        for(int i = 0; i < row.length; i++){
+            row[i] = symbols[random.nextInt(symbols.length)];
+        }
+            
+        return row;
+    }
+    // PRINT ROW
+    
+
 }
