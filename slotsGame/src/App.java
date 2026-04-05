@@ -45,6 +45,8 @@ public class App{
 
             Row = spinRow();
 
+            printRow(Row);
+
         }
         scanner.close();
         
@@ -67,6 +69,9 @@ public class App{
         return row;
     }
     // PRINT ROW
-    
+    static void printRow(String[] Row){
+
+        System.out.println(" " + String.join(" | ", Row));
+    }
 
 }
