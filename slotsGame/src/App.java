@@ -14,7 +14,7 @@ public class App{
 
         // WELCOME MESSAGE
         System.out.println("********************************************");
-        System.out.println("WELCOME TO JAVA SLOT MACHINE. 🍒 🍉 🍋 ⭐ 🔔");
+        System.out.println("WELCOME TO JAVA SLOT MACHINE. 🍒 🍉 🍋 🔔 ⭐");
         System.out.println("********************************************");
 
 
@@ -47,10 +47,19 @@ public class App{
 
             printRow(Row);
 
+            payout = getPayout(Row,bet);
+            if(payout > 0){
+                System.out.println("CONGRATULATIONS YOU WON!! " + payout);
+                balance += payout;
+            }
+            else{
+                System.out.println("SORRY YOU LOST!!. TRY AGAIN!! ");
+            }
+
         }
         scanner.close();
         
-        // GET PAYOUT
+        
         // ASK TO PLAY AGAIN
         // DISPLAY EXIT MESSAGE
     }
@@ -73,5 +82,34 @@ public class App{
 
         System.out.println(" " + String.join(" | ", Row));
     }
+    // GET PAYOUT
+    static int getPayout(String[] Row, int bet){
 
+        if(Row[0].equals(Row[1]) && Row[1].equals(Row[2])){
+
+            return switch(Row[0]){
+                case "🍒" ->  bet * 3;
+                case "🍉" ->  bet * 4;
+                case "🍋" ->  bet * 5;
+                case "🔔" ->  bet * 10;
+                case "⭐" ->  bet * 20;
+
+                default -> 0;
+            };    
+        }
+        else if(Row[0].equals(Row[1]) || Row[1].equals(Row[2])){
+            
+            return switch(Row[1]){
+                case "🍒" ->  bet * 2;
+                case "🍉" ->  bet * 3;
+                case "🍋" ->  bet * 4;
+                case "🔔" ->  bet * 5;
+                case "⭐" ->  bet * 10;
+                default -> 0;
+            };
+        }
+        return 0;
+   
+    }
+   
 }
