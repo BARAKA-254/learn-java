@@ -56,13 +56,23 @@ public class App{
                 System.out.println("SORRY YOU LOST!!. TRY AGAIN!! ");
             }
 
+            // ASK TO PLAY AGAIN 
+            System.out.println("Would you like to play again?(Y/N): ");
+            
+            String playAgain = scanner.next().toUpperCase();
+            if(playAgain.equals("Y")){
+                continue;
+            }
+            else{
+                // DISPLAY EXIT MESSAGE
+                System.out.println("BYE!!");
+                break;
+            }
+
         }
-        scanner.close();
-        
-        
-        // ASK TO PLAY AGAIN
-        // DISPLAY EXIT MESSAGE
+        scanner.close();       
     }
+
     // SPIN ROW
     static String[] spinRow(){
         Random random = new Random();
