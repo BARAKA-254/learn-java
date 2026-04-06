@@ -91,8 +91,8 @@ public class App{
                 case "🍒" ->  bet * 3;
                 case "🍉" ->  bet * 4;
                 case "🍋" ->  bet * 5;
-                case "🔔" ->  bet * 10;
-                case "⭐" ->  bet * 20;
+                case "🔔" ->  bet * 6;
+                case "⭐" ->  bet * 7;
 
                 default -> 0;
             };    
@@ -104,7 +104,7 @@ public class App{
                 case "🍉" ->  bet * 3;
                 case "🍋" ->  bet * 4;
                 case "🔔" ->  bet * 5;
-                case "⭐" ->  bet * 10;
+                case "⭐" ->  bet * 6;
                 default -> 0;
             };
         }
