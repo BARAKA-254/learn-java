@@ -7,9 +7,9 @@ public class App{
 
         // JAVA SLOT MACHINE
         // DECLARE VARIABLES
-        int balance = 100;
-        int bet;
-        int payout;
+        double balance = 100;
+        double bet;
+        double payout;
         String[] Row;
 
         // WELCOME MESSAGE
@@ -93,7 +93,7 @@ public class App{
         System.out.println(" " + String.join(" | ", Row));
     }
     // GET PAYOUT
-    static int getPayout(String[] Row, int bet){
+    static double getPayout(String[] Row, double bet){
 
         if(Row[0].equals(Row[1]) && Row[1].equals(Row[2])){
 
