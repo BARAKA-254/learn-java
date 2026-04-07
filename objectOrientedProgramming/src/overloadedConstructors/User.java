@@ -8,4 +8,10 @@ public class User {
         this.email = "NOT PROVIDED";
         this.age = 0;
     }    
+    // overloaded constructor
+    User(String username, String email){
+        this.username = username;
+        this.email = email;
+        this.age = 0;
+    }    
 }

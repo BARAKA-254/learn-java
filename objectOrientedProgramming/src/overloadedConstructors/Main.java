@@ -5,10 +5,16 @@ public class Main{
             //                         - allows objects to be initialized in various ways
             
             User user1 = new User("Spongebob");
+            User user2 = new User("Patrick","pStar@gmail.com");
             
     
             System.out.println(user1.username);
             System.out.println(user1.email);
             System.out.println(user1.age);
+            System.out.println();
+
+            System.out.println(user2.username);
+            System.out.println(user2.email);
+            System.out.println(user2.age);
     }
 }
