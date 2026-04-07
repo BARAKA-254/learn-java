@@ -14,4 +14,10 @@ public class User {
         this.email = email;
         this.age = 0;
     }    
+    // another overloaded constructor
+    User(String username, String email, int age)[
+        this.username = username;
+        this.email = email;
+        this.age = age;
+    ]
 }

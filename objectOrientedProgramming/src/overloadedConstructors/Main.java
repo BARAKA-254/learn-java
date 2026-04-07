@@ -1,3 +1,6 @@
+import java.nio.file.attribute.UserPrincipalNotFoundException;
+import java.rmi.server.UID;
+
 public class Main{
     public static void main(String[] args){
     
@@ -6,6 +9,7 @@ public class Main{
             
             User user1 = new User("Spongebob");
             User user2 = new User("Patrick","pStar@gmail.com");
+            User user3 = new User("Sandy", "sCheekSandy@gmail.com", 21);
             
     
             System.out.println(user1.username);
@@ -16,5 +20,10 @@ public class Main{
             System.out.println(user2.username);
             System.out.println(user2.email);
             System.out.println(user2.age);
+            System.out.println();
+
+            System.out.println(user3.username);
+            System.out.println(user3.email);
+            System.out.println(user3.age);
     }
 }
