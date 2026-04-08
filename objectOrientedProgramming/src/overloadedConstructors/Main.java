@@ -10,6 +10,7 @@ public class Main{
             User user1 = new User("Spongebob");
             User user2 = new User("Patrick","pStar@gmail.com");
             User user3 = new User("Sandy", "sCheekSandy@gmail.com", 21);
+            User user4 = new User();
             
     
             System.out.println(user1.username);
@@ -25,5 +26,11 @@ public class Main{
             System.out.println(user3.username);
             System.out.println(user3.email);
             System.out.println(user3.age);
+            System.out.println();
+
+            // guest 
+            System.out.println(user4.username);
+            System.out.println(user4.email);
+            System.out.println(user4.age);
     }
 }
