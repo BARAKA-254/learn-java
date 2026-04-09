@@ -4,5 +4,14 @@ public class Main {
         Car car1 = new Car("BMW", "blue");
         Car car2 = new Car("MERCEDES", "grey");
         Car car3 = new Car("AUDI", "black");
+
+        //create an array of objects
+        Car[] cars = new Car[3];
+        
+        cars[0] = car1;
+        cars[1] = car2;
+        cars[2] = car3;
+
+    
     }
 }
