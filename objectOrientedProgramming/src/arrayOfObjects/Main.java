@@ -12,9 +12,9 @@ public class Main {
         cars[1] = car2;
         cars[2] = car3;
 
-        for(int i = 0; i < cars.length; i++){
-            System.out.println(cars[i].color +  " " + cars[i].model);
-            cars[i].drive();
+        for(Car car : cars){
+            System.out.println(car.color +  " " + car.model);
+            car.drive();
             System.out.println();
         }
     }
