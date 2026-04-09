@@ -14,6 +14,8 @@ public class Main {
 
         for(int i = 0; i < cars.length; i++){
             System.out.println(cars[i].color +  " " + cars[i].model);
+            cars[i].drive();
+            System.out.println();
         }
     }
 }
