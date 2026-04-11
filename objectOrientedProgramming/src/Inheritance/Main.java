@@ -11,6 +11,11 @@ public class Main {
         System.out.println(myCat.isAlive);
         yourDog.eat();
 
+        System.out.println("My cat has " + myCat.lives + " lives. Whereas your dog has " + yourDog.lives + " lives");
+
+        myCat.speak();
+        yourDog.speak();
+
     }
     
 }
