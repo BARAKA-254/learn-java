@@ -19,5 +19,7 @@ public class Main{
         
         System.out.println(friend3.name);
         System.out.println(Friend.numOfFriends);
+
+        Friend.showFriends();
     }
 }
