@@ -4,4 +4,8 @@ public class Animal{
     Animal(){
         isAlive = true;
     }
+
+    public void eat(){
+        System.out.println("The Animal is eating. ");
+    }
 }
