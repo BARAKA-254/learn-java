@@ -6,8 +6,11 @@ class Main{
 
         
         Dog dog = new Dog();
+        Fish fish = new Fish();
 
         dog.move();
+        fish.move();
+
         
     }
 }
