@@ -5,8 +5,13 @@ public class Main{
         //          used in method overriding
         //          calls the parent constructor to initialize attributes
 
-        Person person1 = new Person("Benard", "Baraka");
+        Person person1 = new Person("Spongebob", "Squarepants");
+        Student student = new Student("Patrick", "Star", 3.25);
 
         person1.showName();
+        System.out.println();
+
+        student.showName();
+        student.showGPA();
     }
 }
