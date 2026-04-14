@@ -7,11 +7,17 @@ public class Main{
 
         Person person1 = new Person("Spongebob", "Squarepants");
         Student student = new Student("Patrick", "Star", 3.25);
+        Employee employee = new Employee("Mohamed","Sumbul", 60000);
 
         person1.showName();
         System.out.println();
 
         student.showName();
         student.showGPA();
+        System.out.println();
+
+        employee.showName();
+        employee.showSalary();
+        
     }
 }
