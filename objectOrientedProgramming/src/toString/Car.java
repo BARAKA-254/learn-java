@@ -11,4 +11,9 @@ public class Car{
         this.color = color;
     }
 
+    @Override
+    public String toString(){
+        return this.year + " " + this.color + " " + this.make + " " + this.model;
+    }
+
 }

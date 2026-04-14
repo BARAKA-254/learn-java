@@ -9,6 +9,6 @@ public class Main{
 
         Car car = new Car("BMW","M5CS", 2026, "BLUE");
 
-        System.out.println(car.year + " " + car.color + " " + car.make + " " + car.model);
+        System.out.println(car);
     }
 }
