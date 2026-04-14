@@ -5,5 +5,9 @@ class Main{
         //                   = Allows for code reusability and give specific implementation
 
         
+        Dog dog = new Dog();
+
+        dog.move();
+        
     }
 }
