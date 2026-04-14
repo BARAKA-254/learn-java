@@ -7,8 +7,10 @@ public class Main{
         //              It can be overriden to provide meaningful details
 
 
-        Car car = new Car("BMW","M5CS", 2026, "BLUE");
+        Car car1 = new Car("BMW","M5CS", 2026, "BLUE");
+        Car car2 = new Car("FORD","MUSTANG",2024,"RED");
 
-        System.out.println(car);
+        System.out.println(car1);
+        System.out.println(car2);
     }
 }
