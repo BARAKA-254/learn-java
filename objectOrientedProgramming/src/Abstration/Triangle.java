@@ -1,0 +1,5 @@
+class Triangle extends Shape{
+
+  
+    
+}
