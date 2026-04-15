@@ -11,8 +11,13 @@ public class Main{
         Triangle triangle = new Triangle(3, 4);
         Rectangle rectangle = new Rectangle(5, 6);
 
-        System.out.println("The area of a rectangle "+ rectangle.area());
-        System.out.println("The area of the circle is " +circle.area());
+        System.out.println("The area of a rectangle " + rectangle.area());
+        System.out.println("The area of the circle is " + circle.area());
         System.out.println("The area of the triangle is " + triangle.area());
+        System.out.println();
+
+        circle.displayInfo();
+        triangle.displayInfo();
+        rectangle.displayInfo();
     }
 }
