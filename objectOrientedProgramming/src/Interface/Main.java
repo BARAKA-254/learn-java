@@ -7,9 +7,16 @@ public class Main{
 
         Rabbit rabbit = new Rabbit();
         Hawk hawk = new Hawk();
+        Fish fish = new Fish();
 
         hawk.hunt();
+        System.out.println();
+
         rabbit.flee();
+        System.out.println();
+        
+        fish.hunt();
+        fish.flee();
         
     }
 }
