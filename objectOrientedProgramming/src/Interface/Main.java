@@ -6,7 +6,10 @@ public class Main{
         //              Support multiple inheritance like behaviour 
 
         Rabbit rabbit = new Rabbit();
+        Hawk hawk = new Hawk();
 
+        hawk.hunt();
         rabbit.flee();
+        
     }
 }
