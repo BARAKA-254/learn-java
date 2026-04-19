@@ -13,6 +13,7 @@ public class Car {
         this.price = price;
     }
 
+    // getter methods to make the attibutes above accessible from other classes
     public String getMake(){
         return this.make;
     }
@@ -31,5 +32,18 @@ public class Car {
 
     public int getPrice(){
         return this.price;
+    }
+
+    // setter methods to make the attributes not declared as final modifiable from other classes
+    public void setColor(String color){
+        this.color = color;
+    }
+
+    public void setPrice(int price){
+        this.price = price;
+    }
+
+    public void displayInfo(){
+        System.out.println("Car Details: \n" + this.color + " " + this.year + " " + this.make + " " + this.model + "\nPrice: " + this.price);
     }
 }
