@@ -1,7 +1,7 @@
 public class Car {
-    private String make;
-    private String model;
-    private int year;
+    private final String make;
+    private final String model;
+    private final int year;
     private String color;
     private int price;
 
