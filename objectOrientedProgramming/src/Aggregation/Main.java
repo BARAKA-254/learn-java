@@ -11,6 +11,10 @@ public class Main{
 
         Book[] books = {book1, book2, book3};
 
+        Library library = new Library(1957,"UpperHill National Library", books);
+
+        
+
         for(Book book : books){
             book.displayInfo();
         }
