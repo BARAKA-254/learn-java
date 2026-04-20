@@ -6,8 +6,13 @@ public class Main{
         //               but the container objects can exist independently
 
         Book book1 = new Book("The River Between", 500);
+        Book book2 = new Book("Blossoms of The Savannah", 600);
+        Book book3 = new Book("An Artist of the Erithrean Sea", 400);
 
+        Book[] books = {book1, book2, book3};
 
-        book1.displayInfo();
+        for(Book book : books){
+            book.displayInfo();
+        }
     }
 }
