@@ -13,10 +13,7 @@ public class Main{
 
         Library library = new Library(1957,"UpperHill National Library", books);
 
+        library.displayInfo();
         
-
-        for(Book book : books){
-            book.displayInfo();
-        }
     }
 }
