@@ -29,7 +29,7 @@ public class University{
         for(int i = 0; i < facultyNames.length; i++){
             System.out.println(facultyNames);
             
-            // for every iteration, call the displayInfo() method for the element in the index position from the faculties array which displays the courses offered in every faculty
+            // for every iteration, call the displayInfo() method for the element in the index position from the faculties array which displays the courses offered in every faculty        
             faculties[i].displayInfo();
             System.out.println();   
         }
