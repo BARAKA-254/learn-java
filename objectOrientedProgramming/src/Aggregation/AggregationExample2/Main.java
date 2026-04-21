@@ -16,8 +16,8 @@ public class Main{
         
         KYU.displayInfo();
         KYU.displayDetailedInfo();
-        //System.out.println();
-        //SPAS.displayInfo();
+        
+        // THE RELATIONSHIP BETWEEN THE UNIVERSITY AND THE FACULTY IN THIS CONTEXT IS AN AGGREGATION BECAUSE YOU COULD DELETE THE UNIVERSITY CLASS BUT THE FACULTY CLASS WOULDN'T BE AFFECTED
 
     }
 }
