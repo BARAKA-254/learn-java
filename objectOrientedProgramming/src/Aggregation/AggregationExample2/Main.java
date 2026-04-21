@@ -15,6 +15,7 @@ public class Main{
 
         
         KYU.displayInfo();
+        KYU.displayDetailedInfo();
         //System.out.println();
         //SPAS.displayInfo();
 
