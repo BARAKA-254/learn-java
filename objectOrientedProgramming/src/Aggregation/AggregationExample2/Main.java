@@ -5,12 +5,18 @@ public class Main{
         Faculty ENG = new Faculty("School Of Engineering", "Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Mechatronics Engineering");
         Faculty HEALTH = new Faculty("School Of Medicine and Health Sciences", "Medicine", "Nursing", "Pharmacy", "Medical Engineering");
 
-        Faculty[] faculties = {SPAS,ENG,HEALTH};
-        
-        University KYU = new University("Kirinyaga University", 1973, faculties);
 
-        System.out.println(KYU.name);
-        SPAS.displayInfo();
+        String[] facultyNames = {"SPAS", "ENG", "HEALTH"};
+
+        Faculty[] faculties = {SPAS,ENG,HEALTH};
+
+        
+        University KYU = new University("Kirinyaga University", 1973, facultyNames, faculties);
+
+        
+        KYU.displayInfo();
+        //System.out.println();
+        //SPAS.displayInfo();
 
     }
 }
