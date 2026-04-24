@@ -37,10 +37,19 @@ public class Main {
         String h = Double.toString(30.23);
         String i = Boolean.toString(true);
 
-        //concatenate them an assign them to a variable m
+        //concatenate them and assign them to a variable m
         String m = f + h + i;
 
         System.out.println(m);
+
+        //converting string to their primitive data types
+        int j = Integer.parseInt(f);
+        double k = Double.parseDouble(h);
+        boolean l = Boolean.parseBoolean(i);
+
+        System.out.println(j);
+        System.out.println(k);
+        System.out.println(l);
 
     }   
 }
