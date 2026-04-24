@@ -12,4 +12,10 @@ public class Car{
     public void displayInfo(){
         System.out.println("This is the " + this.year + " BMW " + this.model + " BI-TURBO " + this.engine.engineType);
     }
+
+    public void Start(){
+        System.out.println("The car is turning on");
+        
+        engine.startEngine();
+    }
 } 

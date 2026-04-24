@@ -7,5 +7,7 @@ public class Main{
         Car car = new Car("M5", 2025, "V8");
 
         car.displayInfo();
+
+        car.Start();
     }
 }

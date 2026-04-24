@@ -6,4 +6,8 @@ public class Engine{
 
         this.engineType = engineType;
     }
+
+    public void startEngine(){
+        System.out.println("Engine is starting!! ");
+    }
 }
