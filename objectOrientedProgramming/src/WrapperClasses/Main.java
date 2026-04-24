@@ -32,5 +32,15 @@ public class Main {
         char z = c;
         boolean g = d;
 
+        // converting a primitive data types into a String
+        String f = Integer.toString(123);
+        String h = Double.toString(30.23);
+        String i = Boolean.toString(true);
+
+        //concatenate them an assign them to a variable m
+        String m = f + h + i;
+
+        System.out.println(m);
+
     }   
 }
