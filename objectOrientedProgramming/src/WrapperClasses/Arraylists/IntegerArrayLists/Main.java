@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +16,7 @@ public class Main {
         idNumbers.add(8876554);
 
         System.out.println("Unsorted: " + idNumbers);
+        Collections.sort(idNumbers);   
+        System.out.println("Sorted:   " + idNumbers);
     }    
 }
