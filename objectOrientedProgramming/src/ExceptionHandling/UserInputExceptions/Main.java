@@ -18,6 +18,9 @@ public class Main {
         catch(InputMismatchException e){
             System.out.println("Invalid Input");
         }
+        catch(Exception e){
+            System.out.println("Something Went wrong");
+        }
         // the finally block always executes
         finally{
             scanner.close();
