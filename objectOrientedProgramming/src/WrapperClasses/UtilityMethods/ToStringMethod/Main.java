@@ -22,5 +22,7 @@ public class Main {
         boolean truce = true;
         String urrm = Boolean.toString(truce);
         System.out.println(urrm); 
+        
+        System.out.println("Concatenated strings: " +Number1 + " " + Number2 + " " + letter + " " + urrm);
     }
 }
