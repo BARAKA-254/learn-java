@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Fruits {
     public static void main(String[] args) {
@@ -24,6 +25,11 @@ public class Fruits {
         // set method replaces the item in the specified index with the other one passed withing the method
         fruits.set(0, "Pineapple");
         System.out.println(fruits);
+
+        // sort the elements
+        System.out.println("\nUnsorted: " + fruits);
+        Collections.sort(fruits);
+        System.out.println("Sorted  : " + fruits);
 
     }
 }
