@@ -3,14 +3,18 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         // Using FileWriter fo create files
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("THIS IS A FILE WRITER ");
+        System.out.print("Enter the file name including the format: ");
+        String fileName = scanner.nextLine();
 
-        try (FileWriter writer = new FileWriter("test.txt"); Scanner scanner = new Scanner(System.in)) {
+        try (FileWriter writer = new FileWriter(fileName)) {
 
             int fileCounter = 0;
             String userFile = " ";
 
-            System.out.println("Type you file here: (type : [fileWriter._save] ) to save file: ");
-            while(fileCounter <= 5){
+            System.out.println("Type you file here: ");
+            while(fileCounter < 5){
                 
                 if(fileCounter == 0){
                     userFile = scanner.nextLine().toUpperCase();
@@ -28,6 +32,9 @@ public class Main{
         } 
         catch (Exception e) {
             System.out.println("Something went wrong");    
+        }
+        finally{
+            scanner.close();
         }
     }
 }
