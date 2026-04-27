@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
-        // Using FileWriter fo create files
+        // Using FileWriter to create files
         Scanner scanner = new Scanner(System.in);
         System.out.println("THIS IS A FILE WRITER ");
         System.out.print("Enter the file name including the format: ");
