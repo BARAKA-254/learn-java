@@ -12,13 +12,15 @@ public class Main{
         System.out.print("Enter your fileName along with the extesion: ");
         String fileName = scanner.nextLine();
 
-        while (lineCounter < 5) {
+        //while (lineCounter < 5) {
             try (FileWriter writer = new FileWriter(fileName)) {
-                System.out.println("File written successfully!!");
-          
-                writer.write("Wassup twin");
+                
+                System.out.println("WRITE YOUR FILE HERE: ");
+                textLine = scanner.nextLine();
 
                 lineCounter++;
+
+                writer.write(textLine);
             } 
             catch(FileNotFoundException e){
                 System.out.println("File couldn't be printed!!");
@@ -31,7 +33,9 @@ public class Main{
             finally{
                 scanner.close();
             }
-        }
+            
+        //}
+        
        
         
     }
