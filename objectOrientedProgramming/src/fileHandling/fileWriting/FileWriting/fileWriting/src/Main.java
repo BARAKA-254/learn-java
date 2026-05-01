@@ -17,18 +17,16 @@ public class Main{
             System.out.println("WRITE YOUR FILE HERE: ");
                 while (lineCounter < 5) {
                     if(lineCounter == 0){
-                    textLine = scanner.nextLine();
-                }
-                else{
-                    textLine = textLine + " \n" + scanner.nextLine();
-                }
+                        textLine = scanner.nextLine();
+                    }
+                    else{
+                        textLine = textLine + " \n" + scanner.nextLine();
+                    }
 
-                System.out.println("File writtenn succesfully");
-                lineCounter++;
-            }   
+                    lineCounter++;            
+                }
             
-            
-
+            System.out.println("File written succesfully");  
             writer.write(textLine);
         } 
                 
